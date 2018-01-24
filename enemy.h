@@ -1,18 +1,18 @@
-#ifndef BULLET_H
-#define BULLET_H
+#ifndef ENEMY_H
+#define ENEMY_H
 
 #include <QGraphicsRectItem>
-#include <QGraphicsItem>
 #include <QObject>
+#include <QGraphicsItem>
 #include "movingobject.h"
 
-class Bullet: public MovingObject{
+class Enemy: public MovingObject{
     Q_OBJECT
 public:
-    Bullet(Game * game);
+    Enemy(Game * game);
 public slots:
-    void update();
     void destroy();
+    void update();
 };
 
 #endif
